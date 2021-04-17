@@ -6,10 +6,19 @@
         <li>
             Drone name: {{this.name}}
             Propellers: {{this.propellers}}
-            Max. Speed: {{this.maxSpeed}}
+            Max.Speed: {{this.maxSpeed}}
+            <form action="/drones/{{this.id}}/edit" method="GET">
+               <button type="submit">Edit</button>
+            </form> 
+
         </li>
     {{/each}}  
+
+    
 </ul>
+
+
+  
 
 
 
